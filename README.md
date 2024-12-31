@@ -1,6 +1,6 @@
 # 🎬 World Wise  
 
-## 🌟 Features  
+//## 🌟 Features  
 
 
 ## 🔗 Project Link  
@@ -11,6 +11,8 @@ To view the live project, click on this [link](https://popcorn-six-orcin.vercel.
 ## 📄 Technologies Used  
 
 - React  
+
+
 
 ## 👥 Contributing  
 
