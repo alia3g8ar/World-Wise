@@ -4,7 +4,7 @@ start World Wise project
 
 ## 🔗 Project Link  
 
-To view the live project, click on this [link](https://popcorn-six-orcin.vercel.app/).  
+To view the live project, click on this [link](https://world-wise-opal.vercel.app/).  
 
 
 
