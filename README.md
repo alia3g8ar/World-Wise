@@ -11,4 +11,4 @@ To view the live project, click on this [link](https://world-wise-opal.vercel.ap
 ## 📄 Technologies Used  
 
 - React  
-
+- React Router 
