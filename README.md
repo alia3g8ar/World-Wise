@@ -1,7 +1,5 @@
 # 🎬 World Wise  
 
-//## 🌟 Features  
-
 
 ## 🔗 Project Link  
 
