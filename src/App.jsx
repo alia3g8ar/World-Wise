@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Product from "./pages/Product.jsx"
-import Pricing from "./pages/Pricing.jsx"
-import HomePage from "./pages/HomePage.jsx"
-import PageNotFound from "./pages/PageNotFound.jsx"
-import AppLayout from "./pages/AppLayout.jsx"
-import Login from "./pages/Login.jsx"
+import Product from "./pages/Product/Product.jsx"
+import Pricing from "./pages/Pricing/Pricing.jsx"
+import HomePage from "./pages/HomePage/HomePage.jsx"
+import PageNotFound from "./pages/PageNotFound/PageNotFound.jsx"
+import AppLayout from "./pages/AppLayout/AppLayout.jsx"
+import Login from "./pages/Login/Login.jsx"
 
 function App() {
   return (
