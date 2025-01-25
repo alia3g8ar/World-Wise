@@ -37,7 +37,7 @@ function Form() {
       try {
         setIsLoadingGeoCoding(true)
         setGeoCodingError("")
-        const res = await fetch(`${BASE_URL}?latitude=${lat}&longitude=${lng}`)
+        const res = await fetch(`${BASE_URL}?latitude=${Lat}&longitude=${Lng}`)
         const data = await res.json()
 
         if (!data.countryCode) {
@@ -57,7 +57,7 @@ function Form() {
     }
 
     fetchCityData()
-  }, [lat, lng])
+  }, [Lat, Lng])
 
   if (isLoadingGeoCoding) return <Spinner />
   if (geoCodingError) return <Message message={geoCodingError} />
