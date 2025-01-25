@@ -1,14 +1,12 @@
-# 🌎 World Wise  
+# 🌎 World Wise
 
-start World Wise project 
+start World Wise project
 
-## 🔗 Project Link  
+## 🔗 Project Link
 
-To view the live project, click on this [link](https://world-wise-opal.vercel.app/).  
+To view the live project, click on this [link](https://world-wise-opal.vercel.app/).
 
+## 📄 Technologies Used
 
-
-## 📄 Technologies Used  
-
-- React  
-- React Router 
+- React
+- React Router
