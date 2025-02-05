@@ -64,7 +64,7 @@ function CitiesProvider({ children }) {
       setIsLoading(true)
 
       await fetch(`${BASE_URL}/cities/${id}`, {
-        method: " DELETE",
+        method: "DELETE",
       })
       setCities((cities) => cities.filter((city) => city.id !== id))
     } catch (error) {

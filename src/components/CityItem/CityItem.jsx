@@ -22,7 +22,7 @@ function CityItem({ city }) {
   const { CityName, emoji, date, id, position } = city
 
   function handleClick(e) {
-    e.preventDfeault()
+    e.preventDefault()
     deleteCity(id)
   }
 
