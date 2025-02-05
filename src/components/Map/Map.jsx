@@ -17,7 +17,7 @@ import useUrlPosition from "../../hooks/useUrlPosition.js"
 
 function Map() {
   const { cities } = useCities()
-  const [mapPosition, setMapPosition] = useState([40, 0])
+  const [mapPosition, setMapPosition] = useState([40, 10])
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
@@ -44,7 +44,7 @@ function Map() {
       )}
       <MapContainer
         className={styles.map}
-        center={mapPosition}
+        center={mapLat && mapLng ? [mapLat, mapLng] : [40, 10]}
         zoom={13}
         scrollWheelZoom={true}
       >
@@ -52,17 +52,19 @@ function Map() {
           attribution='&copy; <a href="https://www.openstreetmap.fr/hot/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {cities.map((city) => (
-          <Marker
-            position={[city.position.lat, city.position.lng]}
-            key={city.id}
-          >
-            <Popup>
-              <span>{city.emoji}</span>
-              <span>{city.name}</span>
-            </Popup>
-          </Marker>
-        ))}
+        {cities.map((city) =>
+          city.position.lat && city.position.lng ? (
+            <Marker
+              position={[city.position.lat, city.position.lng]}
+              key={city.id}
+            >
+              <Popup>
+                <span>{city.emoji}</span>
+                <span>{city.name}</span>
+              </Popup>
+            </Marker>
+          ) : null,
+        )}
         <ChangeCenter position={mapPosition} />
         <DetectClick />
       </MapContainer>
